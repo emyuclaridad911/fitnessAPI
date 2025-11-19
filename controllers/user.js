@@ -41,7 +41,7 @@ module.exports.loginUser = async (req, res) => {
       process.env.JWT_SECRET_KEY
     );
 
-    res.status(200).json({ accessed: token });
+    res.status(200).json({ access: token });
   } catch (err) {
     errorHandler(err, req, res);
   }
